@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".FundDetailsActivity"
+
+        >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:gravity="center"
+            android:text="စာသင်ကျောင်းသို့ လမ်းဖောက်ပေးရန် အလှူခံခြင်း"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:lineSpacingMultiplier="1.5"
+            android:text=" \t \t \t ချင်းပြည်နယ် မင်းတပ်မြို့နယ်အပိုင် ရွာလေးတရွာက
+ကျောင်းသူကျောင်းသားများ ကျောင်းသွားနေကြတဲ့ မြင်ကွင်းဖြစ်ပါတယ်။ \n \t \t \tရွာမှာ ကိုယ်ပိုင်ကျောင်းမရှိတဲ့အတွက် နီးစပ်ရာရွာမှာ ကျောင်းသွားတက်ရပါတယ်။ အသက် အန္တရာယ် များလွန်းတဲ့ လမ်းကို နေ့တိုင်းဖြတ်သန်းနေရပါတယ်။ ပညာကို အသက်နဲ့ရင်းပြီးသင်နေရပါတယ်။ သူတို့အတွက် ကျောင်း ဒါမှမဟုတ် ပိုကောင်းမွန်တဲ့ လမ်း ကိုတည်ဆောက်ပေးနိုင်ရင် အကောင်းဆုံးပါပဲ။"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTv"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTv">
+
+            <RelativeLayout
+                android:id="@+id/totalNeededFundLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/totalNeededFundTitleTv"
+                    style="@style/LightXS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="စုစုပေါင်းလိုငွေ"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/totalNeededFundTv"
+                    style="@style/LightS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalNeededFundTitleTv"
+
+
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    tools:text="5000000 ကျပ်" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/startDateLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/startDateTitleTv"
+                    style="@style/LightXS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="စသည့်နေ့"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/startDateTv"
+                    style="@style/LightS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startDateTitleTv"
+
+
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    tools:text="15 Oct 2019" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/endDateLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/endDateTitleTv"
+                    style="@style/LightXS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="ပြီးဆုံးရန် လျာထားသောနေ့"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/endDateTv"
+                    style="@style/LightS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/endDateTitleTv"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    tools:text="15 Nov 2019" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/storyViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:text="မြင်ကွင်းများ"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusLayout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/storyRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/storyViewTitle"
+            tools:itemCount="1"
+            tools:listitem="@layout/cardview_story"
+            tools:orientation="horizontal" />
+
+
+        <TextView
+            android:id="@+id/donateBtn"
+            style="@style/BoldN"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@drawable/background_light_grey_30"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:text="လှူဒါန်းရန်"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/storyRv" />
+
+        <TextView
+            android:id="@+id/donorsViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xlarge"
+            android:text="အလှူရှင်မှတ်တမ်းများ"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donateBtn" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/donorRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donorsViewTitle"
+            tools:itemCount="5"
+            tools:listitem="@layout/cardview_fund_transaction" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation Kotlin.gradle_plugin
+    implementation AndroidXCore.core
+    implementation AndroidXCore.core_ktx
+    implementation AndroidXRecyclerView.recycler_view
+    implementation AndroidXRecyclerView.selection
+    implementation Lottie.lottie
+    implementation Retrofit.core
+    implementation Retrofit.okhttp
+    implementation Retrofit.gson
+    implementation Retrofit.rxJavaAdapter
+    implementation Retrofit.loggingInterceptor
+    implementation Retrofit.scalarConverter
+    implementation Retrofit.gsonConverter
+    implementation CommonCodec.codec
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation AndroidArchLifeCycle.lifecycle
+    kapt AndroidArchLifeCycle.lifecycle_compiler
+}

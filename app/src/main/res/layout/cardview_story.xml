@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="@dimen/margin_large"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:foreground="@drawable/gradient_background_black_up"
+            android:src="@drawable/dummy_img" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/margin_medium"
+            android:lineSpacingMultiplier="1.5"
+            android:text="ချင်းပြည်နယ် မင်းတပ်မြို့နယ်အပိုင် ရွာလေးတရွာက
+ကျောင်းသူကျောင်းသားများ ကျောင်းသွားနေကြတဲ့ မြင်ကွင်းဖြစ်ပါတယ်။ "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

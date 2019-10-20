@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppBase</string>
+    <string name="title_msg_no_search_result">No Search Results Found</string>
+    <string name="title_msg_try_again_search">Please Try Searching Some Other Items</string>
+    <string name="title_msg_emptyView">No Internet Connection</string>
+    <string name="title_msg_try_again">Please Check Your Network Connection And Try Again</string>
+    <string name="title_msg_unexpected_error_occured">Unexpected Error Occurred</string>
+    <string name="title_msg_try_again_for_error">Please Try Again</string>
+    <string name="btn_txt_emptyView">Refresh</string>
+    <string name="SP_TOKEN">token</string>
+    <string name="SP_USER_NAME">user name</string>
+    <string name="SP_PHONE_NUMBER">phone number</string>
+    <string name="SP_ADDRESS">address</string>
+    <string name="SP_PROFESSION">profession</string>
+    <string name="SP_LOGIN">has login</string>
+</resources>

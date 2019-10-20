@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    style="@style/BoldN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="မောင်ကျော်စွာ"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/descriptionTv"
+                    style="@style/LightS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleTv"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="Donated to Community Fund"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/dateTimeTv"
+                    style="@style/LightXS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descriptionTv"
+                    android:layout_marginStart="@dimen/margin_large"
+
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:padding="@dimen/margin_small"
+                    android:text="5 days ago"
+                    android:textColor="@color/grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/totalNeededFundTitleTv"
+                    style="@style/LightXS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:text="စုစုပေါင်းလှူငွေ"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/totalNeededFundTv"
+                    style="@style/LightS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalNeededFundTitleTv"
+
+
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    tools:text="5000000 ကျပ်" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
